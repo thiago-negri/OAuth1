@@ -31,7 +31,7 @@ abstract class WP_JSON_Authentication {
 
 	abstract public function authenticate( $user );
 
-	abstract public function get_authentication_errors();
+	abstract public function get_authentication_errors( $value );
 
 	public function get_consumer( $key ) {
 		$this->should_attempt = false;
